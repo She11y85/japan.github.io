@@ -1,0 +1,1613 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+    line-height: 1;
+    /* overflow-x: hidden; */
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*共用區*/
+:root {
+    --indigo: #374C66;
+    --auburn: #9F353A;
+    --alabaster: #F1EEE1;
+    --rosyBrown: #B19693;
+    --jel: #403D3D;
+}
+
+img {
+    display: block;
+    width: 100%;
+    /* svg預設W100%,其他圖檔預設為原尺寸 */
+}
+
+a {
+    display: block;
+    color: var(--deep);
+    text-decoration: none;
+    /* 取消預設的底線裝飾 */
+}
+
+button {
+    /* 重置所有默认样式 */
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* 显示指针光标 */
+    /* 在需要的情况下添加其他样式 */
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /*主軸:垂直*/
+    justify-content: center;
+    /*主軸(垂直)置中*/
+    align-items: center;
+    /*副軸水平置中*/
+    height: 100vh;
+
+}
+
+
+
+.titleP {
+    height: 50px;
+    width: 290px;
+}
+
+/* 漢堡按鈕區 */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.7s ease;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menuBox {
+    display: flex;
+    align-items: center;
+}
+
+.menuLogoimg {
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+}
+
+.menuImg {
+    height: 100vh;
+    max-height: 100%;
+
+}
+
+.logohavefont {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 230px;
+    max-width: 100%;
+
+}
+
+
+.menuIconBox {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.menuIconBox li {
+    font-size: 1.4rem;
+    color: var(--indigo);
+}
+
+.menuIconBox li img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.menuIconBox li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--indigo);
+}
+
+.menu .all {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .all li {
+    color: var(--indigo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--indigo);
+}
+
+.menuIconBox .allOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 230px;
+    margin: 40px 0;
+}
+
+.menuIconBox .allOptions li {
+    width: auto;
+}
+
+.menuIconBox .button,
+.l {
+    margin: 0 30px;
+}
+
+.menuIconBox .button li {
+    margin-top: 20px;
+}
+
+.menu-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.menu-social-media li:nth-child(1),
+.menu-social-media li:nth-child(2) {
+    margin-right: 50px;
+}
+
+.menu-social-media li img {
+    /* margin設定格式化 */
+    margin: initial;
+    width: 25px;
+    height: 25px;
+}
+
+
+.show-menu {
+    right: 0;
+}
+
+button#closeMenu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+
+/* 完 */
+
+/*頁首區*/
+.logo {
+    width: 210px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    height: 955px;
+
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    /* 將背景圖片的寬度設為自動，高度設為 300 像素 */
+    background-position: center;
+    /* 將背景圖片置中 */
+    background-repeat: no-repeat;
+    /* 禁止背景圖片重複 */
+}
+
+.banner .topbarfont {
+    writing-mode: vertical-rl;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2.8;
+    /* 設置行高為字體大小的2.8倍 */
+    height: 400px;
+    /* 固定高度為 400 像素 */
+    letter-spacing: 20px;
+    /* 設置字距為2像素 */
+    text-indent: 20px;
+}
+
+.topbarfont .t2 {
+    /*交錯行高*/
+    text-indent: 60px;
+}
+
+
+#navbar {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* 垂直置中 */
+    border-radius: 0 0 50px 50px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /* 導覽列玻璃擬態 */
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 2px 2px 4px 1px #9c9797;
+    /* 只有外框陰影 */
+    backdrop-filter: blur(10px);
+}
+
+.icon {
+    display: flex;
+    color: var(--jel);
+    margin-right: 50px;
+}
+
+.icon li {
+    margin: 0 10px;
+    /* 調整圖片與文字之間的間距 */
+    display: inline-block;
+    /* 讓列表項水平排列 */
+    margin-left: 20px;
+    /* 調整列表項之間的間距 */
+}
+
+.icon li a {
+    display: flex;
+    align-items: center;
+    /* 將圖片與文字垂直置中 */
+    font-size: 1.3rem;
+}
+
+.icon :hover {
+
+    cursor: pointer;
+}
+
+.icon li img {
+    width: 30px;
+    /* 圖片寬度 */
+    height: 30px;
+    /* 圖片高度 */
+    margin-right: 5px;
+    /* 調整圖片與文字之間的間距 */
+}
+
+.sticky+main {
+    padding-top: 80px;
+}
+
+.burgerBtn {
+    cursor: pointer;
+}
+
+.Mmenu {
+    display: none;
+
+}
+
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    #navbar {
+        display: none;
+    }
+
+    .Mmenu {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: 30px;
+        right: 30px;
+    }
+
+
+    .menuLogoimg {
+        display: none;
+    }
+
+    .menuImg {
+        display: none;
+    }
+
+    .menuIconBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menuIconBox>.all:nth-of-type(1) {
+        margin-top: 50px;
+    }
+
+
+    .menuIconBox .allOptions {
+        padding: 0 0px;
+    }
+
+    button#closeMenu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .menuIconBox li {
+        font-size: 1rem;
+        color: var(--indigo);
+        /* background-color: #d7ffea; */
+    }
+
+    .menu .all {
+        margin-top: 10px;
+    }
+    .menu-social-media {
+        margin-top: 30px;
+    }
+}
+
+/*關於日本*/
+#about {
+    background-image: url(./images/Rectangle-180.jpg);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.imgbox {
+    display: flex;
+    margin-right: 200px;
+}
+
+.imgboxR {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+/* W調整圖比例 */
+#CarouselImg1 {
+    width: 410px;
+}
+
+#CarouselImg2 {
+    height: 262.55px;
+    width: 350px;
+}
+
+.CarouselImg img {
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.title {
+    position: relative;
+    width: 290px;
+    height: 50px;
+    margin-bottom: 100px;
+    /* 下方距離 */
+}
+
+.title h1 {
+    position: absolute;
+    top: 75%;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
+.title h2 {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+}
+
+.aboutT {
+    width: 45%;
+}
+
+.whyjp {
+    line-height: 2rem;
+    border: 2px solid #ffffff;
+    /* 外框線寬度和顏色 */
+    border-radius: 40px 0 0 40px;
+    /* 左側圓角 */
+    padding: 77px 60px 77px 80px;
+}
+
+.whyjp h1 {
+    font-size: 1.25rem;
+    color: var(--indigo);
+    font-weight: bold;
+}
+
+.whyjp h2 {
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    #about {
+        height: 700px;
+        flex-direction: column-reverse;
+    }
+
+    #about .title {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .whyjp {
+        width: 300px;
+        border-radius: 40px;
+        padding: 50px 20px;
+    }
+
+    .imgbox {
+        display: none;
+    }
+
+    .aboutT {
+        width: 78%;
+    }
+
+}
+
+/*所有地區*/
+#allRegions {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    height: 700px;
+    background-image: url(./images/Rectangle-180.jpg);
+    overflow: hidden;
+}
+
+.clouds-L,
+.clouds-R {
+    position: absolute;
+}
+
+.clouds-L {
+    width: 600px;
+    top: 5%;
+    left: 0;
+}
+
+.clouds-R {
+    width: 500px;
+    top: 55%;
+    right: 0;
+}
+
+
+.allRegions {
+    display: flex;
+}
+
+.allRw {
+    margin-left: 500px;
+    display: flex;
+    /* 將 .allRw 元素設置為 flex 容器 */
+    flex-direction: column;
+    /* 將內容從上到下垂直排列 */
+    justify-content: center;
+    /* 水平置中 */
+}
+
+.w1 {
+    width: 450px;
+    margin-bottom: 80px;
+}
+
+.w1,
+.w2 h1 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--indigo);
+
+}
+
+.w2 {
+    width: 450px;
+}
+
+.w2 h1 {
+    margin: 50px 0 50px 0;
+}
+
+
+
+.allRegionsbe {
+    align-self: flex-start;
+    /* 將該元素的內容置頂 */
+}
+
+.mapbox {
+
+    height: 700px;
+    margin-left: 100px;
+    z-index: 1;
+    /* 設置層級，這裡假設 .div1 在上面 */
+}
+
+.mapbox .title {
+    position: absolute;
+    /* 設置絕對位置 */
+    top: 250px;
+    /* 設置距離父元素頂部的距離 */
+    left: 1000px;
+    /* 設置距離父元素左側的距離 */
+    z-index: 2;
+    /* 設置層級，這裡假設 .div2 在上面 */
+}
+
+/* 地圖縮放 */
+.map {
+    position: relative;
+}
+
+.map a {
+    transition: transform 0.3s ease;
+    /* 添加過渡效果 */
+    position: absolute;
+}
+
+.map :hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.Kanto:hover {
+    z-index: 999;
+}
+
+
+.Hokkaido {
+    height: 200px;
+    width: 230px;
+    top: 100px;
+    left: 310px;
+}
+
+.Kanto {
+    height: 250px;
+    left: 249px;
+    top: 279px;
+    width: 150px;
+}
+
+.Kansai {
+    height: 230px;
+    width: 305px;
+    left: -55px;
+    top: 415px;
+}
+
+
+.Shikoku {
+    height: 90px;
+    left: 60px;
+    width: 100px;
+    top: 530px;
+
+}
+
+.Kyushu {
+    height: 100px;
+    width: 60px;
+    left: 20px;
+    top: 530px;
+}
+
+.Mtittle {
+    display: none;
+}
+
+/* 完。*/
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    #allRegions {
+        height: 1300px;
+    }
+
+    .allRw {
+        margin-left: 70px;
+        display: flex;
+        /* 將 .allRw 元素設置為 flex 容器 */
+        flex-direction: column;
+        /* 將內容從上到下垂直排列 */
+        justify-content: center;
+        /* 水平置中 */
+    }
+
+    .w1,
+    .w2 {
+        width: 300px;
+    }
+
+    .clouds-L {
+        width: 400px;
+        top: 50%;
+        left: 0;
+    }
+
+    .clouds-R {
+        width: 400px;
+        top: 85%;
+        right: 0;
+    }
+
+
+    .allRegions {
+        width: 100%;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .mapbox .title {
+        position: absolute;
+        top: 2%;
+        left: 17%;
+    }
+
+    .Hokkaido {
+        top: 90px;
+        left: 170px;
+        width: 120px;
+        height: 200px;
+    }
+
+    .Kanto {
+        top: 182px;
+        left: 129px;
+        width: 91px;
+        height: 250px;
+    }
+
+    .Kansai {
+        top: 265px;
+        left: -45px;
+        width: 175px;
+        height: 230px;
+    }
+
+
+    .Shikoku {
+        top: 332px;
+        left: 12px;
+        width: 70px;
+        height: 90px;
+    }
+
+    .Kyushu {
+        top: 329px;
+        left: -12px;
+        width: 39px;
+        height: 100px;
+    }
+
+    #allRegions .titlebox {
+        margin-top: 30px;
+        position: absolute;
+        left: 80%;
+        top: 86%;
+        display: flex;
+        flex-direction: row;
+        z-index: 998;
+    }
+
+    .Mtittle {
+        display: block;
+        position: absolute;
+        top: 78%;
+        left: 17%;
+        color: var(--indigo);
+    }
+}
+
+
+/* 推薦行程 */
+#recommendations {
+    height: 55vh;
+    align-items: center;
+    background-image: url(./images/Rectangle-180.jpg);
+}
+
+.recommendations-botton {
+    left: 50%;
+    margin-top: 100px;
+    /* 上方為按鈕上下左右位置調整 */
+    position: absolute;
+    width: 100px;
+    display: flex;
+    /* 將父元素設置為 Flexbox 容器 */
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.titlebox {
+    margin-top: 30px;
+    position: absolute;
+    left: 85%;
+    top: 75%;
+    display: flex;
+    flex-direction: row;
+    z-index: 998;
+}
+
+.title1 {
+    writing-mode: vertical-lr;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    margin-right: 25px;
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+    letter-spacing: 13px;
+    /* 增加字距 */
+}
+
+
+.title2 {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    /* 旋轉基準點在左上角 */
+    white-space: nowrap;
+    /* 防止文字換行 */
+
+}
+
+/* 橫向輪播條 */
+.slider {
+    max-width: 1900px;
+    display: flex;
+}
+
+.slider .card {
+    flex: 1;
+    height: 400px;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .Ctitle {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-align: left;
+}
+
+.card .content .sub-title {
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+.card .content .sub-title img {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+
+.card .content p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* 底 */
+
+
+/* 所有主題 */
+#allEvents {
+    height: 900px;
+    background-color: white;
+}
+
+#allEvents .title {
+    margin-bottom: 160px;
+}
+
+/* 大輪播 */
+#allEvents .slider2 {
+    max-width: 1900px;
+    display: flex;
+}
+
+#allEvents .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Label {
+    top: -1px;
+    left: -1px;
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+    color: var(--indigo);
+}
+
+.Label p {
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.Label .T {
+    top: 10px;
+    left: 25px;
+}
+
+.Label .D {
+    top: 50px;
+    left: 75px;
+
+}
+
+.Label::before {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 100px;
+    height: 2px;
+    transform: rotate(145deg);
+    background-color: var(--indigo);
+}
+
+#allEvents .slider2 .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+#allEvents .slider2 .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#allEvents .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#allEvents .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
+}
+
+#allEvents .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    #allEvents {
+        height: 700px;
+    }
+
+    #allEvents .slider2 .card {
+        width: 400px;
+        height: 500px;
+        flex: 1;
+        margin: 0 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #allEvents .slider2 .card .content {
+        background-color: #ffffff;
+        padding: 20px 0;
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 280px;
+        width: 300px;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    #allEvents .card .content .sub-title {
+        margin: 0 30px;
+    }
+
+    #allEvents .title {
+        margin-bottom: 60px;
+    }
+}
+
+/* 大輪播完 */
+.all-t {
+    width: 634px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+
+    border: 1px solid #1515ff;
+    background-color: #ffbcbc;
+}
+
+.all-t p {
+    margin: 20px 60px;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
+/* 最新消息 */
+#news {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+}
+
+.box-r {
+    display: flex;
+    flex-direction: column;
+}
+
+#news .newsImg {
+    height: 100vh;
+    width: 40%;
+}
+
+.newst {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+.newsright-t {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--indigo);
+    line-height: 2.5;
+}
+
+.newsright-t a {
+    height: 60px;
+    width: 190px;
+    background-image: url(./images/morebotton.png);
+}
+
+.newsright-t a:hover {
+    height: 60px;
+    width: 190px;
+    background-image: url(./images/morebotton-hover.png);
+}
+
+.newsright-t img {
+    height: 50px;
+}
+
+.newst1 {
+    margin: 30px 0;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {
+    #news {
+        height: 75vh;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #news .title {
+        margin-left: 60px;
+        margin-bottom: 80px;
+    }
+
+    #news .newsImg {
+        display: none;
+    }
+
+    .newst {
+        width: 100%;
+        margin: 0;
+    }
+
+    .newsright-t {
+        width: 400px;
+    }
+
+    .newst1 {
+        width: 80%;
+    }
+
+    .newsright-t img {
+        height: 30px;
+
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    #news {
+        margin-bottom: 50px;
+    }
+
+    .newsImg {
+        display: none;
+    }
+
+    .newst {
+        width: 100%;
+    }
+
+    .newsright-t img {
+        height: 30px;
+
+    }
+
+    .newst1 {
+        margin: 10px 0 0 10px;
+    }
+}
+
+/* 頁尾區 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+    height: 40vh;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    width: 64px;
+    height: 40px;
+}
+
+.footer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footerLogo {
+    width: 100px;
+    padding-right: 30px;
+    border-right: 3px solid var(--alabaster);
+}
+
+.footer-left h1 {
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
+}
+
+.footer-left h2 {
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    line-height: 2.5;
+    /* 設置行高為文字大小的2.5倍 */
+    font-size: 1rem;
+
+}
+
+.f1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f2 {
+    margin-right: 62px;
+}
+
+.f3 h2 {
+    line-height: 1.5;
+    /* 設置行高為文字大小的1.5倍 */
+}
+
+
+.footer-right {
+    display: flex;
+    height: 224px;
+    width: 350px;
+    color: var(--alabaster);
+}
+
+.r {
+    line-height: 2.5;
+    align-content: start;
+}
+
+.r1 {
+    display: block;
+    position: relative;
+}
+
+.r1::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 140%;
+    background: #aaa;
+    width: 3px;
+    height: 140px;
+}
+
+.r1,
+.r2 {
+    margin-right: 60px;
+}
+
+.Copyright-Notice {
+    color: var(--alabaster);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*rwd斷點*/
+
+/*平板*/
+@media (max-width:820px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    .footer {
+        margin-top: 50px;
+        width: 73%;
+    }
+
+    .social-media-icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media-icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icon img {
+        height: 25px;
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        /* 垂直居中 */
+        justify-content: center;
+        /* 水平居中 */
+        align-content: center;
+        /* 如果有多行，保证整体居中 */
+    }
+
+    .footer-left .f3 {
+        margin: 10px 120px 20px 0;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .r1::after {
+        left: 130%;
+    }
+
+    .r1,
+    .r2 {
+        margin-right: 40px;
+    }
+
+    .footerLogo {
+        padding: 0;
+        border-right:none;
+    }
+
+
+    .f1 {
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f2 {
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .Copyright-Notice {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    footer a:hover {
+        text-decoration: none;
+    }
+
+}
+
+/* TOP鈕 */
+.gotop {
+    position: fixed;
+    display: none;
+    top: 85%;
+    left: 95%;
+    width: 70px;
+    max-width: 100%;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    .gotop {
+        left: 80%;
+    }
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}

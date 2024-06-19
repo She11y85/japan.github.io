@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京都茶道三日行</title>
+    <link rel="icon" href="./images/LOGO/logo.png">
+    <link rel="stylesheet" href="./kyoto.css">
+</head>
+
+<body>
+
+
+    <!-- 首頁 -->
+    <header>
+        <div class="topbar">
+            <a href="index.html"><img src="./images/logo.svg" alt=""></a>
+            <div class="text-box">
+                <div class="text">
+                    <h2>日本的傳統古都</h2>
+                    <h1>京都〡品味優雅茶道之三日行</h1>
+                    <h3>Kyoto</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 漢堡按鈕區 -->
+    <div id="menu" class="menu">
+        <div class="menu-content">
+            <button id="closeMenu"><img src="./images/close.png" alt=""></button>
+            <div class="menuBox">
+                <div class="menuLogoimg">
+                    <img src="./images/menuImg.jpg" alt="" class="menuImg">
+                    <a href="./index.html"><img src="./images/LOGO/logohavefont-off-wite.png" alt=""
+                            class="logohavefont"></a>
+                </div>
+                <ul class="menuIconBox">
+                    <div class="all">
+                        <li><img src="./images/icon/tea.png" alt="">所有主題 All Events</li>
+                    </div>
+                    <div class="allOptions">
+                        <li><a href="./HistoricBuildings.html">古蹟建築</a></li>
+                        <li><a href="./TraditionalSports.html">傳統運動</a></li>
+                        <li><a href="./CulturalCustoms.html">文化習俗</a></li>
+                    </div>
+                    <div class="all">
+                        <li><img src="./images/icon/food.png" alt="">所有地區 All Regions</li>
+                    </div>
+                    <div class="allOptions">
+                        <li><a href="./allitineraries.html#Hokkaido">北海道</a></li>
+                        <li><a href="./allitineraries.html#KANTO">關東</a></li>
+                        <li><a href="./allitineraries.html#KANSAI">關西</a></li>
+                        <li><a href="./allitineraries.html#SHIKOKU">四國</a></li>
+                        <li><a href="./allitineraries.html#KYUSHU">九州</a></li>
+                    </div>
+                    <div class="button l">
+                        <li><a href="./contactus.html"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a>
+                        </li>
+
+                        <li><a href="index.html#news"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a>
+                        </li>
+                        <li><a href="index.html#about"><img src="./images/icon/susi.svg" alt="">關於日本 About Japan</a>
+                        </li>
+                    </div>
+                    <div class="button">
+                        <li><a href="./allitineraries.html"><img src="./images/icon/fish.svg" alt="">開團總覽 Itinerary
+                                Overview</a></li>
+                        </li>
+                        <li><a href="./Travel-Information.html"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊 Travel
+                                Information</a></li>
+                        <li><a href="./aboutus.html"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a>
+                        </li>
+                    </div>
+                    <div class="menu-social-media">
+                        <li><a href="#"><img src="./images/icon/IG-b.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon/LINE-b.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon/FB-b.png" alt=""></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 內容 -->
+    <main>
+        <!-- 索引 -->
+        <div class="focus">
+            <ul class="focus-box">
+                <li>
+                    <img src="./images/map.svg" alt="">
+                    <div class="focus-text">
+                        <h2>日本</h2>
+                        <h3>京都</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/people.svg" alt="">
+                    <div class="focus-text">
+                        <h2>成團人數</h2>
+                        <h3>5-10人</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/dollar.svg" alt="">
+                    <div class="focus-text">
+                        <h2>一人價格</h2>
+                        <h3>35,990</h3>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="openMenu">
+                <a><img src="./images/Fukuoka/menu.svg" alt="">
+                    <h2>MENU</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- 選擇日期 -->
+        <div class="date">
+            <div class="date-title">
+                <h1>出團日期</h1>
+                <h2>Data</h2>
+            </div>
+
+            <div class="choose">
+                <div class="choose-btn" id="btn1" onclick="selectButton(1)">
+                    <div class="choose-box">
+                        <div class="choose-text">
+                            <img src="./images/Fukuoka/airplan.svg" alt="">
+                            <h2>2024 / 08 / 25（五） - 2024 / 08 / 28（一）</h2>
+                        </div>
+                        <p>南南航空： 去程CB175（9：00-12：00）/回程CB179（14：00-17：00）</p>
+                    </div>
+                </div>
+
+                <div class="choose-btn inactive" id="btn2" onclick="selectButton(2)">
+                    <div class="choose-box">
+                        <div class="choose-text">
+                            <img src="./images/Fukuoka/airplan.svg" alt="">
+                            <h2>2024 / 07 / 20（四） - 2024 / 07 / 24（日）</h2>
+                        </div>
+                        <p>南南航空： 去程CB165（9：00-12：00）/回程CB169（14：00-17：00）</p>
+                    </div>
+                </div>
+
+
+                <!-- 報名按鈕 -->
+                <a href="./Registration.html" class="btn-SignUp">
+                    <div>立即報名</div>
+                </a>
+            </div>
+
+
+
+            <div class="line"></div>
+        </div>
+
+
+        <div class="guide">
+            <div class="guide-box">
+                <div class="guide-img">
+                    <div class="guide-bg"></div>
+                    <div class="guide-line"></div>
+                    <div class="guide-image"></div>
+                </div>
+
+                <div class="guide-text">
+                    <h2>當地專門導遊</h2>
+                    <h3>Danny</h3>
+                    <p>勇敢地踏上未知的旅途，會發現意想不到的驚喜，<br>
+                        期待與您一同探索這個充滿魅力的國家！<br><br>
+                        個性: 細心周到、注重細節、開朗活潑<br>
+                        語言: 中文、日文、西班牙文<br>
+                        經驗: 旅日工作12年，有5年帶團資歷</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 行程特色 -->
+        <div class="feature-box">
+            <nav>
+                <ul>
+                    <li onclick="currentSlide(1)">文化習俗</li>
+                    <li onclick="currentSlide(2)">當地美食</li>
+                    <li onclick="currentSlide(3)">精選旅宿</li>
+                </ul>
+            </nav>
+
+            <!--古蹟建築  -->
+            <div class="feature01">
+                <!-- 直式照片 -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./images/kyoto/feature/1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/kyoto/feature/2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/kyoto/feature/3.jpg" style="width:100%">
+                    </div>
+                </div>
+
+
+                <div class="f-box">
+                    <div class="f-boxBtn">
+                        <button class="btn-lift" id="left" onclick="plusSlides(-1)"></button>
+                        <!-- 標題切換 -->
+                        <div class="text-container">
+                            <h1 class="headings-container">山茶花園</h1>
+                            <h1 class="headings-container">懷石料理</h1>
+                            <h1 class="headings-container">京都米凱平和飯店</h1>
+                        </div>
+                        <button class="btn-right" id="right" onclick="plusSlides(1)"></button>
+                    </div>
+
+                    <div class="paragraphs-container">
+                        <p class="paragraph">
+                            參觀山茶花花園茶館，了解正宗日本茶道的儀式。在進行茶道儀式之前，茶藝師會介紹抹茶的歷史，並讓您也有機會嘗試自己製作。茶館環繞在茂盛的山茶花中，提供各式高品質茶葉和美味點心，讓訪客在自然環境中享受片刻寧靜。無論是與友人共度下午茶時光，還是獨自放鬆心靈，這裡都是理想選擇。
+                        </p>
+                        <p class="paragraph">
+                            京都以其傳統和美食著稱，是饕客的天堂。京料理精緻高雅，如懷石料理展現四季之美。生八橋、湯豆腐、鯖壽司等地道美味，滿足您的味蕾，體驗古都獨特的飲食文化。而其中懷石料理是源自日本的高級傳統料理，以精緻簡約為特色。每道菜均講求季節性食材的搭配，強調食材本味及美感。懷石料理通常包括多道小菜，從開胃菜、湯品到甜點，營造出豐富的味覺體驗。
+                        </p>
+                        <p class="paragraph">
+                            京都米凱平和飯店是一家位於日本京都的豪華酒店，融合了現代舒適和傳統日式風格。酒店提供寬敞雅緻的客房，並配備先進設施，如餐廳、酒吧、健身中心和水療服務。其地理位置優越，方便前往主要景點，是旅客體驗京都文化和風情的理想住宿選擇。
+                        </p>
+                    </div>
+
+
+                    <div class="f-boxImg">
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container2">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides2 fade">
+                                <img src="./images/kyoto/feature/4.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/kyoto/feature/5.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/kyoto/feature/6.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container3">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides3 fade">
+                                <img src="./images/kyoto/feature/7.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/kyoto/feature/8.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/kyoto/feature/9.jpg" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 花 -->
+        <div class="DailyTour">
+            <img src="./images/Daily Tour.png" alt="">
+        </div>
+
+
+
+
+        <!-- 每日行程 Day1.2.3.4--> <!-- 參考codpen: https://codepen.io/kazmeyer/pen/DJdore -->
+
+        <div class="all-DAY">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Day 1</a></li>
+                    <li><a href="#tabs-2">Day 2</a></li>
+                    <li><a href="#tabs-3">Day 3</a></li>
+
+                </ul>
+                <div id="tabs-1">
+                    <div class="day_container">
+                        <!-- 第一天內容 -->
+                        <div class="day-content">
+                            <!-- 行程1-->
+                            <div class="journey-box">
+                                <div class="journey1">
+                                    <h3>SPOT 1</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>山茶花園茶館</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img"><!-- 每天行程都有更改這裡  有加"div class="next-img" -->
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (2).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (15).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (9).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    山茶花園茶館是位於京都市內的一家知名茶館，專門提供優質的茶點和日本茶。這家茶館位於山茶花園內，環境清幽，適合放鬆身心，品味優雅的日式文化。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 餐點1 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>2</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>花見小路今井</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：為方便參觀，請自理</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (3).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (18).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (9).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 3</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>八阪神社</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (7).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (14).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (16).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    八阪神社，又稱八阪宮，是位於日本京都市東山區的一座歷史悠久的神社。它是京都市內最著名和最受歡迎的神社之一，也是許多節慶和傳統活動的主要場所之一。
+                                </p>
+                            </div>
+
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>4</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>中村樓</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>晚餐：懷石料理</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (11).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (13).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (6).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 飯店 -->
+                            <div class="hotel">
+
+                                <!-- 大張圖 -->
+                                <div class="hotel-img">
+                                    <img src="./images/kyoto/hotel/hotel1 (1).jpg" alt="">
+                                </div>
+
+                                <div class="hotel-h3">
+                                    <h3>SPOT 5</h3>
+                                </div>
+
+                                <h4>京都米凱平和飯店</h4>
+
+
+                                <!-- 文+圖 -->
+                                <div class="hotel-text">
+                                    <p>
+                                        坐落在河原町，是一家具有歷史悠久的豪華飯店，提供優雅的客房和周到的服務，是享受京都傳統魅力的好地方。
+                                    </p>
+                                    <img src="./images/kyoto/hotel/hotel1 (2).jpg" alt="">
+                                    <img src="./images/kyoto/hotel/hotel1 (3).jpg" alt="">
+                                </div>
+
+
+                                <!--色塊 -->
+                                <div class="color"></div>
+
+                            </div>
+
+                        </div><!-- 第一天結束 -->
+                    </div>
+                    <!-- 第一天內容 -->
+                </div>
+                <div id="tabs-2">
+                    <div class="day_container">
+                        <!--第二天內容-->
+                        <div class="day-content">
+                            <!-- 餐點1 -->
+                            <br>
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>1</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>京都米凱平和飯店</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>早餐：飯店自助餐點</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (17).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (14).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (15).jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+                            <!-- 行程1-->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 2</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>茶和宇治的歷史公園</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (13).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (17).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (18).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    透過展示品、史蹟與體驗課程，來推廣宇治的當地歷史、文化資訊。除了介紹宇治歷史的博物館之外，在「茶和宇治的城市交流館」中的「茶zuna」，可以製作自己原創的茶筒，以及體驗製作宇治茶糖等。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>宇治圓</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：品嚐茶點和抹茶</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (1).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (4).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (12).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 4</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>南禅寺</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (10).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (3).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (5).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    南禅寺是位於日本京都市東山區的一座重要佛寺，也是臨濟宗總本山之一。它擁有悠久的歷史和豐富的文化遺產，是京都最著名的寺廟之一，每年吸引著大量的遊客和信徒前來參觀。
+                                </p>
+                            </div>
+
+
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點3 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>5</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>京燒肉 弘 八坂邸</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>晚餐：日式燒肉</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (5).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (8).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (10).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 飯店 -->
+                            <div class="hotel">
+
+                                <!-- 大張圖 -->
+                                <div class="hotel-img">
+                                    <img src="./images/kyoto/hotel/hotel1 (1).jpg" alt="">
+                                </div>
+
+                                <div class="hotel-h3">
+                                    <h3>SPOT 6</h3>
+                                </div>
+
+                                <h4>京都米凱平和飯店</h4>
+
+
+                                <!-- 文+圖 -->
+                                <div class="hotel-text">
+                                    <p>
+                                        坐落在河原町，是一家具有歷史悠久的豪華飯店，提供優雅的客房和周到的服務，是享受京都傳統魅力的好地方。
+                                    </p>
+                                    <img src="./images/kyoto/hotel/hotel1 (2).jpg" alt="">
+                                    <img src="./images/kyoto/hotel/hotel1 (3).jpg" alt="">
+                                </div>
+
+
+                                <!--色塊 -->
+                                <div class="color"></div>
+
+                            </div><!-- 第二天結束 -->
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div class="day_container">
+                        <!--第三天內容-->
+                        <div class="day-content">
+                            <!-- 餐點1 -->
+                            <br>
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>1</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>京都米凱平和飯店</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>早餐：飯店自助餐點</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (17).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (14).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (15).jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+                            <!-- 行程1-->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 2</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>伏見稻荷大社</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (6).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/kyoto/Itinerary/kyoto1 (11).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (12).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    伏見稻荷大社是一座位於日本京都市伏見區的知名神社，也是日本最大的稻荷神社之一。這座神社以其數千個朱紅色鳥居而聞名，每年吸引著大量的遊客前來參觀和朝拜。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>錦市場</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：為方便參觀，請自理</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/kyoto/food/food1 (2).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (7).jpg" alt="">
+                                    <img src="./images/kyoto/food/food1 (16).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 4</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>京都國立博物館</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (8).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (4).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/kyoto/Itinerary/kyoto1 (1).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    京都國立博物館致力於展示和保存日本和亞洲的藝術和文化遺產。這座博物館擁有豐富的藏品，包括傳統藝術品、歷史文物和考古發現等，展示了日本古代至現代的文化和藝術成就。
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- MAP -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.9975388422436!2d135.71671007575893!3d35.03179147280382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001078736b30ff1%3A0x7f22ce14c217db80!2sTea%20Ceremony%20Camellia%20GARDEN!5e0!3m2!1szh-TW!2stw!4v1716885168359!5m2!1szh-TW!2stw"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <!-- 備註 -->
+
+        <div class="note">
+            <div class="note-title">
+                <h1>備註</h1>
+                <h2>Note</h2>
+            </div>
+            <div class="note-text">
+                <ul>
+                    <li><img src="./images/note.svg" alt="">團費不含:不含小費,不含行李超重費,不含接送費,不含稅。</li>
+                    <li><img src="./images/note.svg" alt="">行程中所有的景點料金與餐食費，都已包含在團費中。</li>
+                    <li><img src="./images/note.svg" alt="">行程中常安排許多有特色的料理，無法對應餐食禁忌或素食狀況，請貴賓們諒解。</li>
+                    <li><img src="./images/note.svg" alt="">行程設定為團體行程，貴賓於出遊期間之人身安全，於旅遊行程期間，恕無法接受脫隊之要求。
+                    </li>
+                </ul>
+            </div>
+
+            <div class="note-line"></div>
+        </div>
+
+    </main>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <div class="footer-frame">
+            <div class="social-media-icon">
+                <a href=""><img src="./images/icon/fb.png" alt=""></a>
+                <a href=""><img src="./images/icon/ig.png" alt=""></a>
+                <a href=""><img src="./images/icon/line.png" alt=""></a>
+            </div>
+            <div class="footer">
+                <div class="footer-left">
+                    <div class="footerLogo">
+                        <img src="./images/LOGO/logo-Off-white.png" alt="">
+                    </div>
+                    <div class="f f1">
+                        <h1>昵朋旅行社</h1>
+                        <h1>NIPPON TOURS</h1>
+                    </div>
+                    <div class="f f2">
+                        <h2>地址 / 台西市下區大大路 20 號 11 樓之 7 </h2>
+                        <h2>電話 / 08-8787878787 </h2>
+                        <h2>Email : nippon123@gmail.com</h2>
+                    </div>
+                    <div class="f f3">
+                        <h2>平日 12：00 ～ 19：00</h2>
+                        <h2>假日 10：00 ～ 19：00</h2>
+                        <h2>（週二、週三公休）</h2>
+                        <h2>*國定假日照常營業</h2>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r r1">
+                        <a href="#allEvents">所有主題</a>
+                        <a href="./CulturalCustoms.html">文化習俗</a>
+                        <a href="./HistoricBuildings.html">古蹟建築</a>
+                        <a href="./TraditionalSports.html">傳統運動</a>
+                    </div>
+                    <div class="r r2">
+                        <a href="./contactus.html">聯絡我們</a>
+                        <a href="./aboutus.html">關於我們</a>
+                        <a href="index.html#news">最新消息</a>
+                        <a href="index.html#about">關於日本</a>
+                    </div>
+                    <div class="r r3">
+                        <a href="./allitineraries.html">開團總覽</a>
+                        <a href="./Travel-Information.html">旅遊資訊</a>
+                    </div>
+                </div>
+                <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
+            </div>
+        </div>
+    </footer>
+    <!-- TOP鈕 -->
+    <a href="#" class="gotop" id="gotop"><img src="./images/TOP.png" alt=""></a>
+
+    <!-- 啟用jquery -->
+    <!-- jQuery主程式 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- 圖片自動輪播主程式 -->
+    <script src="./js/jquery.cycle.all.js"></script>
+    <!-- 標籤效果 -->
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        // 選擇日期按鈕
+        function selectButton(selectedBtnId) {
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+
+            if (selectedBtnId === 1) {
+                btn1.classList.remove('inactive');
+                btn2.classList.add('inactive');
+            } else if (selectedBtnId === 2) {
+                btn2.classList.remove('inactive');
+                btn1.classList.add('inactive');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <!-- 自訂的js -->
+    <script src="./js/travel.js"></script>
+</body>
+
+</html>

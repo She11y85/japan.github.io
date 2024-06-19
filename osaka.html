@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阪歌舞伎三日行</title>
+    <link rel="icon" href="./images/LOGO/logo.png">
+    <link rel="stylesheet" href="./osaka.css">
+</head>
+
+<body>
+
+
+    <!-- 首頁 -->
+    <header>
+        <div class="topbar">
+            <a href="index.html"><img src="./images/logo.svg" alt=""></a>
+            <div class="text-box">
+                <div class="text">
+                    <h2>華麗又熱鬧的大阪</h2>
+                    <h1>大阪〡歌舞伎之美三日行</h1>
+                    <h3>Osaka</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 漢堡按鈕區 -->
+    <div id="menu" class="menu">
+        <div class="menu-content">
+            <button id="closeMenu"><img src="./images/close.png" alt=""></button>
+            <div class="menuBox">
+                <div class="menuLogoimg">
+                    <img src="./images/menuImg.jpg" alt="" class="menuImg">
+                    <a href="./index.html"><img src="./images/LOGO/logohavefont-off-wite.png" alt=""
+                            class="logohavefont"></a>
+                </div>
+                <ul class="menuIconBox">
+                    <div class="all">
+                        <li><img src="./images/icon/tea.png" alt="">所有主題 All Events</li>
+                    </div>
+                    <div class="allOptions">
+                        <li><a href="./HistoricBuildings.html">古蹟建築</a></li>
+                        <li><a href="./TraditionalSports.html">傳統運動</a></li>
+                        <li><a href="./CulturalCustoms.html">文化習俗</a></li>
+                    </div>
+                    <div class="all">
+                        <li><img src="./images/icon/food.png" alt="">所有地區 All Regions</li>
+                    </div>
+                    <div class="allOptions">
+                        <li><a href="./allitineraries.html#Hokkaido">北海道</a></li>
+                        <li><a href="./allitineraries.html#KANTO">關東</a></li>
+                        <li><a href="./allitineraries.html#KANSAI">關西</a></li>
+                        <li><a href="./allitineraries.html#SHIKOKU">四國</a></li>
+                        <li><a href="./allitineraries.html#KYUSHU">九州</a></li>
+                    </div>
+                    <div class="button l">
+                        <li><a href="./contactus.html"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a>
+                        </li>
+
+                        <li><a href="index.html#news"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a>
+                        </li>
+                        <li><a href="index.html#about"><img src="./images/icon/susi.svg" alt="">關於日本 About Japan</a>
+                        </li>
+                    </div>
+                    <div class="button">
+                        <li><a href="./allitineraries.html"><img src="./images/icon/fish.svg" alt="">開團總覽 Itinerary
+                                Overview</a></li>
+                        </li>
+                        <li><a href="./Travel-Information.html"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊 Travel
+                                Information</a></li>
+                        <li><a href="./aboutus.html"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a>
+                        </li>
+                    </div>
+                    <div class="menu-social-media">
+                        <li><a href="#"><img src="./images/icon/IG-b.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon/LINE-b.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/icon/FB-b.png" alt=""></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 內容 -->
+    <main>
+        <!-- 索引 -->
+        <div class="focus">
+            <ul class="focus-box">
+                <li>
+                    <img src="./images/map.svg" alt="">
+                    <div class="focus-text">
+                        <h2>日本</h2>
+                        <h3>大阪</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/people.svg" alt="">
+                    <div class="focus-text">
+                        <h2>成團人數</h2>
+                        <h3>5-10人</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/dollar.svg" alt="">
+                    <div class="focus-text">
+                        <h2>一人價格</h2>
+                        <h3>48,990</h3>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="openMenu">
+                <a><img src="./images/Fukuoka/menu.svg" alt="">
+                    <h2>MENU</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- 選擇日期 -->
+        <div class="date">
+            <div class="date-title">
+                <h1>出團日期</h1>
+                <h2>Data</h2>
+            </div>
+
+            <div class="choose">
+                <div class="choose-btn" id="btn1" onclick="selectButton(1)">
+                    <div class="choose-box">
+                        <div class="choose-text">
+                            <img src="./images/Fukuoka/airplan.svg" alt="">
+                            <h2>2024 / 08 / 25（五） - 2024 / 08 / 28（一）</h2>
+                        </div>
+                        <p>南南航空： 去程CB175（9：00-12：00）/回程CB179（14：00-17：00）</p>
+                    </div>
+                </div>
+
+                <div class="choose-btn inactive" id="btn2" onclick="selectButton(2)">
+                    <div class="choose-box">
+                        <div class="choose-text">
+                            <img src="./images/Fukuoka/airplan.svg" alt="">
+                            <h2>2024 / 07 / 20（四） - 2024 / 07 / 24（日）</h2>
+                        </div>
+                        <p>南南航空： 去程CB165（9：00-12：00）/回程CB169（14：00-17：00）</p>
+                    </div>
+                </div>
+
+
+                <!-- 報名按鈕 -->
+                <a href="./Registration.html" class="btn-SignUp">
+                    <div>立即報名</div>
+                </a>
+            </div>
+
+
+
+            <div class="line"></div>
+        </div>
+
+
+        <div class="guide">
+            <div class="guide-box">
+                <div class="guide-img">
+                    <div class="guide-bg"></div>
+                    <div class="guide-line"></div>
+                    <div class="guide-image"></div>
+                </div>
+
+                <div class="guide-text">
+                    <h2>當地專門導遊</h2>
+                    <h3>Cindy</h3>
+                    <p>旅遊是快樂的時光，打開心一起來場悠閒的旅行，<br>
+                        體驗日本的美好吧!<br><br>
+                        個性: 細心親切，待人溫和<br>
+                        語言: 中文、日文、台語<br>
+                        經驗: 旅日工作10年，有3年帶團資歷
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 行程特色 -->
+        <div class="feature-box">
+            <nav>
+                <ul>
+                    <li onclick="currentSlide(1)">文化習俗</li>
+                    <li onclick="currentSlide(2)">當地美食</li>
+                    <li onclick="currentSlide(3)">精選旅宿</li>
+                </ul>
+            </nav>
+
+            <!--古蹟建築  -->
+            <div class="feature01">
+                <!-- 直式照片 -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./images/osaka/feature/1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/osaka/feature/2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/osaka/feature/3.jpg" style="width:100%">
+                    </div>
+                </div>
+
+
+                <div class="f-box">
+                    <div class="f-boxBtn">
+                        <button class="btn-lift" id="left" onclick="plusSlides(-1)"></button>
+                        <!-- 標題切換 -->
+                        <div class="text-container">
+                            <h1 class="headings-container">松竹座</h1>
+                            <h1 class="headings-container">懷石料理</h1>
+                            <h1 class="headings-container">安諾思飯店</h1>
+                        </div>
+                        <button class="btn-right" id="right" onclick="plusSlides(1)"></button>
+                    </div>
+
+                    <div class="paragraphs-container">
+                        <p class="paragraph">
+                            大阪松竹座是位於日本大阪市的一座歷史悠久的劇場，是京都松竹座和福岡松竹座之後，松竹公司第三座建造的劇場。它坐落在大阪市中心的道頓堀地區，是該地區的著名地標之一。</p>
+                        <p class="paragraph">
+                            大阪以其豐富多樣的美食而聞名，被譽為“日本的廚房”。必嘗美食包括章魚燒、御好燒（大阪燒）和河豚料理。道頓堀是美食愛好者的天堂，街道兩旁滿是各式餐廳和小吃攤。無論是街頭小吃還是精緻料理，大阪都能滿足您的味蕾。
+                        </p>
+                        <p class="paragraph">安諾思飯店通常以其簡潔、時尚的設計風格、舒適的客房和便利的地理位置而聞名。這樣的飯店通常提供舒適的客房以滿足觀光客的需求。</p>
+                    </div>
+
+
+                    <div class="f-boxImg">
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container2">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides2 fade">
+                                <img src="./images/osaka/feature/4.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/osaka/feature/5.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/osaka/feature/6.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container3">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides3 fade">
+                                <img src="./images/osaka/feature/7.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/osaka/feature/8.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/osaka/feature/9.jpg" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 花 -->
+        <div class="DailyTour">
+            <img src="./images/Daily Tour.png" alt="">
+        </div>
+
+
+
+
+        <!-- 每日行程 Day1.2.3.4--> <!-- 參考codpen: https://codepen.io/kazmeyer/pen/DJdore -->
+
+        <div class="all-DAY">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Day 1</a></li>
+                    <li><a href="#tabs-2">Day 2</a></li>
+                    <li><a href="#tabs-3">Day 3</a></li>
+
+                </ul>
+                <div id="tabs-1">
+                    <div class="day_container">
+                        <!-- 第一天內容 -->
+                        <div class="day-content">
+                            <!-- 行程1-->
+                            <div class="journey-box">
+                                <div class="journey1">
+                                    <h3>SPOT 1</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>心齋橋</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img"><!-- 每天行程都有更改這裡  有加"div class="next-img" -->
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (11).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (13).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (1).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    心齋橋是日本大阪市的一個著名商業街區，也是大阪市中心的繁華地帶之一。它以眾多的購物商店、餐廳、咖啡館和娛樂場所而聞名。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 餐點1 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>2</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>心齋橋區域</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：為方便參觀，請自理</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (10).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (6).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (3).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 3</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>大阪松竹座</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (8).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (14).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (17).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    大阪松竹座是日本大阪市的一家著名歌舞伎劇場，位於大阪市中心的道頓堀地區。它是由松竹株式會社經營的一家歷史悠久的劇場，建於1923年，至今已有近一個世紀的歷史。
+                                </p>
+                            </div>
+
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>4</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>難波接區</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>晚餐：品嚐壽司</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (5).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (7).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (12).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 飯店 -->
+                            <div class="hotel">
+
+                                <!-- 大張圖 -->
+                                <div class="hotel-img">
+                                    <img src="./images/osaka/hotel/hotel1 (2).jpg" alt="">
+                                </div>
+
+                                <div class="hotel-h3">
+                                    <h3>SPOT 5</h3>
+                                </div>
+
+                                <h4>安諾思飯店</h4>
+
+
+                                <!-- 文+圖 -->
+                                <div class="hotel-text">
+                                    <p>
+                                        這家飯店位於梅田地區的繁華商業區，距離大阪站和地鐵站很近。飯店提供舒適寬敞的客房，設有多個餐飲場所和設施，包括健身房和室內游泳池。
+                                    </p>
+                                    <img src="./images/osaka/hotel/hotel1 (3).jpg" alt="">
+                                    <img src="./images/osaka/hotel/hotel1 (1).jpg" alt="">
+                                </div>
+
+
+                                <!--色塊 -->
+                                <div class="color"></div>
+
+                            </div>
+
+                        </div><!-- 第一天結束 -->
+                    </div>
+                    <!-- 第一天內容 -->
+                </div>
+                <div id="tabs-2">
+                    <div class="day_container">
+                        <!--第二天內容-->
+                        <div class="day-content">
+                            <!-- 餐點1 -->
+                            <br>
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>1</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>安諾思飯店</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>早餐：飯店自助餐點</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (17).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (13).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (11).jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+                            <!-- 行程1-->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 2</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>大阪城</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (12).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (5).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (7).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    大阪城是位於日本大阪市中央區的一座著名的城堡。它是日本歷史上的重要地標和文化遺產之一，也是大阪市最著名的旅遊景點之一。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>さち福や</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：和食午餐</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (1).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (2).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (11).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 4</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>國立文樂劇場</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (4).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (6).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (9).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    國立文樂劇場大阪是一個現代化的劇場，設施完善，能夠容納各種類型的表演，包括戲劇、音樂、舞蹈等。它舉辦了許多本土和國際藝術家的表演，為大阪市民和遊客帶來了豐富多彩的文化饗宴。
+                                </p>
+                            </div>
+
+
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點3 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>5</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>但馬屋TAJIMA-Y</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>晚餐：壽喜燒</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (8).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (9).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (18).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 飯店 -->
+                            <div class="hotel">
+
+                                <!-- 大張圖 -->
+                                <div class="hotel-img">
+                                    <img src="./images/osaka/hotel/hotel1 (2).jpg" alt="">
+                                </div>
+
+                                <div class="hotel-h3">
+                                    <h3>SPOT 6</h3>
+                                </div>
+
+                                <h4>安諾思飯店</h4>
+
+
+                                <!-- 文+圖 -->
+                                <div class="hotel-text">
+                                    <p>
+                                        這家飯店位於梅田地區的繁華商業區，距離大阪站和地鐵站很近。飯店提供舒適寬敞的客房，設有多個餐飲場所和設施，包括健身房和室內游泳池。
+                                    </p>
+                                    <img src="./images/osaka/hotel/hotel1 (3).jpg" alt="">
+                                    <img src="./images/osaka/hotel/hotel1 (1).jpg" alt="">
+                                </div>
+
+
+                                <!--色塊 -->
+                                <div class="color"></div>
+
+                            </div><!-- 第二天結束 -->
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div class="day_container">
+                        <!--第三天內容-->
+                        <div class="day-content">
+                            <!-- 餐點1 -->
+                            <br>
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>1</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>安諾思飯店</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>早餐：飯店自助餐點</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (17).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (13).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (11).jpg" alt="">
+                                </div>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+                            <!-- 行程1-->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 2</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>通天閣</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (2).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"><img src="./images/osaka/Itinerary/osaka (10).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (3).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    通天閣周邊還有眾多的商店、餐廳和遊樂設施，是遊客和當地人常去的地方。在塔的頂部有一個巨大的觀景台，遊客可以從那裡欣賞到大阪市的壯麗景色，也是拍攝照片的絕佳地點。
+                                </p>
+                            </div>
+
+                            <!-- 車程時間 -->
+                            <div class="walk">
+                                <img src="./images/walk.png" alt="">
+                                <h2>徒步約7分鐘</h2>
+                            </div>
+
+
+                            <!-- 餐點2 -->
+                            <div class="eat">
+                                <div class="all-eat">
+                                    <div class="stop">
+                                        <h5>SPOT</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="eat-text">
+                                        <div class="all-text">
+                                            <div class="house">
+                                                <img src="./images/house.png" alt="">
+                                                <h7>通天閣附近料理店</h7>
+                                            </div>
+                                            <div class="food">
+                                                <img src="./images/eat.png" alt="">
+                                                <h7>午餐：為方便參觀，請自理</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="eat-img">
+                                    <img src="./images/osaka/food/food1 (4).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (15).jpg" alt="">
+                                    <img src="./images/osaka/food/food1 (16).jpg" alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- 車程時間 -->
+                            <div class="bus">
+                                <img src="./images/bus.png" alt="">
+                                <h2>乘車約1小時</h2>
+                            </div>
+
+
+                            <!-- 行程2 -->
+                            <div class="journey-box">
+
+                                <div class="journey1">
+                                    <h3>SPOT 4</h3>
+                                    <div class="day-text">
+                                        <button class="btn-day-lift"></button>
+                                        <button class="btn-day-right"></button>
+                                        <h4>大阪松竹座</h4>
+                                    </div>
+                                </div>
+
+                                <div class="day-img">
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (16).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (15).jpg" alt="">
+                                    </div>
+                                    <div class="next-img"> <img src="./images/osaka/Itinerary/osaka (17).jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    大阪松竹座是日本歌舞伎表演的主要場所之一，在這裡觀賞歌舞伎表演是許多遊客和當地人到大阪旅行必做的活動之一。除了歌舞伎之外，大阪松竹座也會舉辦其他類型的表演，吸引了廣泛的觀眾群體。
+                                </p>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- MAP -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.453523184604!2d135.4983354757431!3d34.66850157293109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7139d7a3315%3A0xa4e7422c7b98e7a8!2z5aSn6Ziq5p2-56u55bqn!5e0!3m2!1szh-TW!2stw!4v1716950983323!5m2!1szh-TW!2stw"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <!-- 備註 -->
+
+        <div class="note">
+            <div class="note-title">
+                <h1>備註</h1>
+                <h2>Note</h2>
+            </div>
+            <div class="note-text">
+                <ul>
+                    <li><img src="./images/note.svg" alt="">團費不含:不含小費,不含行李超重費,不含接送費,不含稅。</li>
+                    <li><img src="./images/note.svg" alt="">行程中所有的景點料金與餐食費，都已包含在團費中。</li>
+                    <li><img src="./images/note.svg" alt="">行程中常安排許多有特色的料理，無法對應餐食禁忌或素食狀況，請貴賓們諒解。</li>
+                    <li><img src="./images/note.svg" alt="">行程設定為團體行程，貴賓於出遊期間之人身安全，於旅遊行程期間，恕無法接受脫隊之要求。
+                    </li>
+                </ul>
+            </div>
+
+            <div class="note-line"></div>
+        </div>
+
+    </main>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <div class="footer-frame">
+            <div class="social-media-icon">
+                <a href=""><img src="./images/icon/fb.png" alt=""></a>
+                <a href=""><img src="./images/icon/ig.png" alt=""></a>
+                <a href=""><img src="./images/icon/line.png" alt=""></a>
+            </div>
+            <div class="footer">
+                <div class="footer-left">
+                    <div class="footerLogo">
+                        <img src="./images/LOGO/logo-Off-white.png" alt="">
+                    </div>
+                    <div class="f f1">
+                        <h1>昵朋旅行社</h1>
+                        <h1>NIPPON TOURS</h1>
+                    </div>
+                    <div class="f f2">
+                        <h2>地址 / 台西市下區大大路 20 號 11 樓之 7 </h2>
+                        <h2>電話 / 08-8787878787 </h2>
+                        <h2>Email : nippon123@gmail.com</h2>
+                    </div>
+                    <div class="f f3">
+                        <h2>平日 12：00 ～ 19：00</h2>
+                        <h2>假日 10：00 ～ 19：00</h2>
+                        <h2>（週二、週三公休）</h2>
+                        <h2>*國定假日照常營業</h2>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r r1">
+                        <a href="#allEvents">所有主題</a>
+                        <a href="./CulturalCustoms.html">文化習俗</a>
+                        <a href="./HistoricBuildings.html">古蹟建築</a>
+                        <a href="./TraditionalSports.html">傳統運動</a>
+                    </div>
+                    <div class="r r2">
+                        <a href="./contactus.html">聯絡我們</a>
+                        <a href="./aboutus.html">關於我們</a>
+                        <a href="index.html#news">最新消息</a>
+                        <a href="index.html#about">關於日本</a>
+                    </div>
+                    <div class="r r3">
+                        <a href="./allitineraries.html">開團總覽</a>
+                        <a href="./Travel-Information.html">旅遊資訊</a>
+                    </div>
+                </div>
+                <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
+            </div>
+        </div>
+    </footer>
+    <!-- TOP鈕 -->
+    <a href="#" class="gotop" id="gotop"><img src="./images/TOP.png" alt=""></a>
+
+    <!-- 啟用jquery -->
+    <!-- jQuery主程式 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- 圖片自動輪播主程式 -->
+    <script src="./js/jquery.cycle.all.js"></script>
+    <!-- 標籤效果 -->
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        // 選擇日期按鈕
+        function selectButton(selectedBtnId) {
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+
+            if (selectedBtnId === 1) {
+                btn1.classList.remove('inactive');
+                btn2.classList.add('inactive');
+            } else if (selectedBtnId === 2) {
+                btn2.classList.remove('inactive');
+                btn1.classList.add('inactive');
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <!-- 自訂的js -->
+    <script src="./js/travel.js"></script>
+</body>
+
+</html>
