@@ -30,6 +30,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 關於日本輪播圖
 $(function () {
+    $(".CarouselImg8").cycle({
+        // 輪播效果名稱
+        fx: 'fade',
+        // 第一次輪播時的第一張圖片停留時
+        delay: -4000,
+        // 輪播速度
+        timeout: 500,
+    });
+});
+
+// 關於日本輪播圖
+$(function () {
     $(".CarouselImg").cycle({
         // 輪播效果名稱
         fx: 'fade',

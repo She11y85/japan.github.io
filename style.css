@@ -355,6 +355,7 @@ button#closeMenu {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 6;
 }
 
 
@@ -364,26 +365,35 @@ button#closeMenu {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-}
+} 
 
-.background-img {
+/* .background-img {
     width: 100%;
     height: 100%;
-}
+} */
 
-.banner {
+/* .banner {
     height: 955px;
 
-    background-image: url(./images/home.jpg);
+   /*  background-image: url(./images/home.jpg); 
     background-size: cover;
-    /* 將背景圖片的寬度設為自動，高度設為 300 像素 */
+    /* 將背景圖片的寬度設為自動，高度設為 300 像素
     background-position: center;
-    /* 將背景圖片置中 */
+    /* 將背景圖片置中 
     background-repeat: no-repeat;
-    /* 禁止背景圖片重複 */
+    /* 禁止背景圖片重複 
+} */
+
+.imgbox8{
+    width: 100%;
+    height: 955px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+ 
 }
 
-.banner .topbarfont {
+.topbarfont {
     writing-mode: vertical-rl;
     /* 垂直排列，文字由右向左 */
     text-orientation: upright;
@@ -402,14 +412,16 @@ button#closeMenu {
     letter-spacing: 20px;
     /* 設置字距為2像素 */
     text-indent: 20px;
+    z-index: 9;
 }
 
 .topbarfont .t2 {
     /*交錯行高*/
     text-indent: 60px;
+
 }
 
-
+/* 索引條 */
 #navbar {
     height: 80px;
     display: flex;
