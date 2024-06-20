@@ -365,7 +365,7 @@ button#closeMenu {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-} 
+}
 
 /* .background-img {
     width: 100%;
@@ -384,13 +384,13 @@ button#closeMenu {
     /* 禁止背景圖片重複 
 } */
 
-.imgbox8{
+.imgbox8 {
     width: 100%;
     height: 955px;
     overflow: hidden;
     text-align: center;
     z-index: 1;
- 
+
 }
 
 .topbarfont {
@@ -496,7 +496,45 @@ button#closeMenu {
 @media (min-width:821px) {}
 
 /*平板*/
-@media (max-width:820px) {}
+@media (max-width:820px) {
+
+    .imgbox8 {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+        z-index: 1;
+
+    }
+
+    .imgbox8 img {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px;
+    
+    }
+
+    .topbarfont {
+        height: 200px;
+        line-height: 1.4;
+        margin-top: 20px;
+      
+        letter-spacing: 12px;
+    }
+    .topbarfont .t2 {
+        /*交錯行高*/
+        text-indent: 30px;
+    
+    }
+
+
+
+}
 
 /*手機板*/
 @media (max-width:640px) {
@@ -551,6 +589,7 @@ button#closeMenu {
     .menu .all {
         margin-top: 10px;
     }
+
     .menu-social-media {
         margin-top: 30px;
     }
@@ -650,7 +689,14 @@ button#closeMenu {
 @media (min-width:821px) {}
 
 /*平板*/
-@media (max-width:820px) {}
+@media (max-width:820px) {
+
+
+
+
+
+    
+}
 
 /*手機板*/
 @media (max-width:640px) {
@@ -1559,7 +1605,7 @@ footer a {
 
     .footerLogo {
         padding: 0;
-        border-right:none;
+        border-right: none;
     }
 
 
@@ -1582,6 +1628,7 @@ footer a {
         margin-bottom: 50px;
         text-align: center;
     }
+
     footer a:hover {
         text-decoration: none;
     }
