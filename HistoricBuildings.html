@@ -150,94 +150,8 @@
 
 
 
-        <div id="root"></div>
-
-        <script type="text/babel">
-            const Cardall = ({ all }) => {
-                const Card = ({ img, text }) => (
-                    <div className="Ttemples-service">
-                        <div className="card">
-                            <div className="img">{img}</div>
-                            <div className="content">
-                                <div className="sub-title">{text}</div>
-                            </div>
-                        </div>
-                    </div>
-                );
-
-                // 初始化Owl Carousel  //js裡的
-                React.useEffect(() => {
-                    $(".owl-carousel").owlCarousel({
-                        items: 3,  //顯示3個
-                        loop: true,
-                        margin: 30,  //每個間距30
-                        nav: true,
-                    });
-                }, []);
-
-                return (
-                    <>
-                        <div className="slider2 owl-carousel">
-                            { // 使用map方式執行迴圈
-                                all.map((a, name) => (
-                                    <Card key={name} img={a.img} text={a.text} />
-                                ))
-                            }
-                        </div>
-                    </>
-                );
-            };
-
-
-
-            const Ttemples = [
-                {
-                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/01.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: "日本神社和佛寺是日本文化的精髓之一。是供奉神明的場所，反映了日本人對自然和神靈的崇拜。也是人們尋求心靈寄託和旅遊觀光的熱門目的地。",
-                },
-                {
-                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/02.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: " 神社（神社）：神社是神道教的宗教場所，用於祭祀神明和舉行儀式。結構：神社的特色包括鳥居、手水舍（洗手口）、神殿和神籬。祭祀活動：人們會在神社參加祭典、祈求福祉和健康。",
-                },
-                {
-                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/03.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: "寺廟（寺）：寺廟是佛教的宗教場所，用於供奉佛像和舉行佛事。結構：寺廟的結構通常包括山門、佛殿、塔和禪堂等建築。靈修活動：寺廟是靈修和冥想的場所，僧侶和信眾在這裡進行宗教活動和修行。",
-                },
-            ];
-
-            const Garden = [
-                {
-                    img: <img src="./images/HistoricBuildings/Garden-introduction/01.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: "池泉庭園（池泉回遊式庭園）：擁有池塘和小溪，供人們散步欣賞景色。庭園內通常設有橋樑、島嶼和瀑布，模仿自然景觀。"
-                },
-                {
-                    img: <img src="./images/HistoricBuildings/Garden-introduction/02.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: " 枯山水庭園： 也稱為「禪庭」，以石頭、砂子和苔蘚為主要元素。 模仿山川景觀，常見於禪寺，供僧侶冥想和靈修。"
-                },
-                {
-                    img: <img src="./images/HistoricBuildings/Garden-introduction/03.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
-                    text: "茶庭（露地）：通常與茶室相連，供茶道儀式使用。包括前庭和內庭，設計簡潔，強調寧靜和自然。"
-                },
-            ];
-
-            const MyApp = () => {
-                return (
-                    <>
-                        <div id="shrines">
-                            <Cardall all={Ttemples} />
-                        </div>
-
-                    </>
-                );
-            };
-
-            ReactDOM.createRoot(document.getElementById('root')).render(<MyApp />);
-        </script>
-
-
-
         <!-- HTML寫法  -->
-        <!-- <div class="Ttemples-service">
+ <div class="Garden-service">
             
             <div class="slider2 owl-carousel">
                 <div class="card">
@@ -287,17 +201,7 @@
                 </div>
             </div>
         
-        </div>-->
-
-
-
-
-
-
-
-
-
-
+        </div>
 
 
 
@@ -443,29 +347,9 @@
 
 
 
-
-
-        <div id="root1"></div>
-        <script type="text/babel">
-            const App = () => {
-                return (
-                    <>
-                        <div id="Gardens">
-                            <Cardall all={Garden} />
-                        </div>
-
-                    </>
-                );
-            };
-
-            ReactDOM.createRoot(document.getElementById('root1')).render(<App />);
-        </script>
-
-
-
         <!-- HTML寫法  -->
         <!-- 大輪播 -->
-        <!-- <div class="Garden-service">
+       <div class="Garden-service">
             <div class="slider2 owl-carousel">
 
                 <div class="card">
@@ -512,7 +396,7 @@
                     </div>
                 </div>
             </div> 
-        </div>-->
+        </div>
 
 
 
