@@ -71,26 +71,28 @@ $(document).ready(function () {
                 newItems = itemsSmall;
             } else if (windowWidth <= 820) {
                 newItems = itemsMedium;
+            } else if (windowWidth <= 1440) { // 新增這個判斷條件
+                newItems = 3; // 設置為3個要顯示的項目
             } else {
                 newItems = itemsDefault;
             }
-            owl.trigger('destroy.owl.carousel');
-            owl.owlCarousel({
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: selector === '.slider' ? 3000 : 4500,
-                autoplayHoverPause: true,
-                items: newItems
-            });
+                owl.trigger('destroy.owl.carousel');
+                owl.owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: selector === '.slider' ? 3000 : 4500,
+                    autoplayHoverPause: true,
+                    items: newItems
+                });
+            }
+
+            $(window).resize(updateOwlItems);
+            updateOwlItems(); // Initialize on page load
         }
 
-        $(window).resize(updateOwlItems);
-        updateOwlItems(); // Initialize on page load
-    }
-
-    initializeOwl('.slider', 5, 3, 1);
-    initializeOwl('.slider2', 3, 1, 1);
-});
+        initializeOwl('.slider', 5, 3, 1);
+        initializeOwl('.slider2', 3, 1, 1);
+    });
 
 // TOP至頂按鈕
 $('#gotop').click(function () {
