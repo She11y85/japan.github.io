@@ -138,6 +138,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /*共用區*/
 :root {
     --indigo: #374C66;
@@ -191,33 +192,35 @@ section {
     height: 100vh;
 
 }
+
 /* 標題 */
 .title {
     position: relative;
-        align-self: flex-start;
-        margin-top: 10px;
-    }
-    
-    .title .english {
-        font-size: 1.3rem;
-        /* 調整文字大小 */
-        color: var(--indigo);
-        /* 調整文字顏色 */
-    }
-    
-    .title .chiness {
-        position: absolute;
-        top: 40px;
-        /* 垂直置中 */
-        right: 30px;
-        /* 靠右 */
-        font-weight: bold;
-        /* 粗體字 */
-        color: var(--indigo);
-        /* 調整文字顏色 */
-        font-size: 1.5rem;
-        /* 調整文字大小 */
-    }
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.title .english {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+}
+
+.title .chiness {
+    position: absolute;
+    top: 40px;
+    /* 垂直置中 */
+    right: 30px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
 /* 標題完 */
 
 /* 頁頭 */
@@ -237,9 +240,22 @@ section {
 }
 
 .topbar .title {
-margin-right: 50px;
+    margin-right: 50px;
 }
 
+@media (max-width:1440px) {
+    .topbar .title {
+        margin-right: 95px;
+    }
+
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 /* 首頁大圖*/
 .banner {
@@ -251,6 +267,7 @@ margin-right: 50px;
     background-image: url('./images/CulturalCustoms/bn.jpg');
     background-size: cover;
 }
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -435,11 +452,13 @@ button#closeMenu {
     align-items: center;
     margin-right: 50px;
 }
-#openMenu{
+
+#openMenu {
     display: flex;
     align-items: center;
 }
-#openMenu:hover{
+
+#openMenu:hover {
     cursor: pointer;
 }
 
@@ -456,6 +475,19 @@ button#closeMenu {
     margin: 4px;
 }
 
+@media (max-width:1440px) {
+    .hamburger {
+        margin-right: 95px;
+    }
+
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 /* 文化習俗介紹 */
 .introduce-text {
@@ -518,6 +550,22 @@ button#closeMenu {
     padding-top: 55px;
     margin-left: 0;
 }
+
+@media (max-width:1440px) {
+    .Tea-box {
+        margin-left: 55%;
+
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
 
 
 /* 茶道介紹的框 */
@@ -587,7 +635,28 @@ button#closeMenu {
 
 /* 大輪播完 */
 
+@media (max-width:1440px) {
 
+    .Tea-service .slider2 .card .img img {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .Tea-service .slider2 .card {
+        width: 600px;
+        height: 400px;
+        margin: 0 15px;
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 
 /* 茶道行程推薦 */
@@ -599,8 +668,9 @@ button#closeMenu {
     width: 100%;
     height: 635px;
     /* 背景砂紙圖 */
-background-image: url(./images/Rectangle-180.jpg);
+    background-image: url(./images/Rectangle-180.jpg);
 }
+
 .titlebox {
     margin-top: 35px;
     position: absolute;
@@ -611,6 +681,7 @@ background-image: url(./images/Rectangle-180.jpg);
     z-index: 998;
     /* 設置層級，這裡假設 .div2 在上面 */
 }
+
 .title1 {
     writing-mode: vertical-lr;
     /* 垂直排列，文字由右向左 */
@@ -636,6 +707,7 @@ background-image: url(./images/Rectangle-180.jpg);
     /* 防止文字換行 */
 
 }
+
 .slider {
     max-width: 1900px;
     display: flex;
@@ -767,7 +839,7 @@ background-image: url(./images/Rectangle-180.jpg);
 
 .Kabuki-title h3 {
     position: absolute;
-    top:20px;
+    top: 20px;
     /* 垂直置中 */
     right: 40px;
     /* 靠右 */
@@ -800,6 +872,24 @@ background-image: url(./images/Rectangle-180.jpg);
     align-items: center;
     /* 垂直居中 */
 }
+
+
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .Kabuki-box{
+        margin-left: 150px;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+   
+}
+
 
 /* 大輪播 */
 .Kabuki-service .slider2 {
@@ -855,7 +945,28 @@ background-image: url(./images/Rectangle-180.jpg);
 
 /* 大輪播完 */
 
+@media (max-width:1440px) {
 
+    .Kabuki-service .slider2 .card .img img {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .Kabuki-service .slider2 .card {
+        width: 600px;
+        height: 400px;
+        margin: 0 15px;
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 
 /* 歌舞伎行程推薦 */
@@ -866,7 +977,7 @@ background-image: url(./images/Rectangle-180.jpg);
     align-items: flex-end;
     width: 100%;
     height: 635px;
-background-image: url(./images/Rectangle-180.jpg);
+    background-image: url(./images/Rectangle-180.jpg);
 }
 
 
@@ -1013,6 +1124,30 @@ footer a:hover {
 }
 
 /*rwd斷點*/
+@media (max-width:1440px) {
+    footer {
+        height: 47vh;
+    }
+
+    .footer {
+
+        width: 80%;
+
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .social-media-icon {
+        margin-top: 50px;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+    }
+}
 
 /*平板*/
 @media (max-width:820px) {
@@ -1021,15 +1156,93 @@ footer a:hover {
 
         height: 100%;
     }
+
+
 }
 
 /*手機板*/
 @media (max-width:640px) {
-    footer {
-        width: 100%;
-
-        height: 100%;
+    .footer {
+        margin-top: 50px;
+        width: 73%;
     }
+
+    .social-media-icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media-icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icon img {
+        height: 25px;
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        /* 垂直居中 */
+        justify-content: center;
+        /* 水平居中 */
+        align-content: center;
+        /* 如果有多行，保证整体居中 */
+    }
+
+    .footer-left .f3 {
+        margin: 10px 120px 20px 0;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .r1::after {
+        left: 130%;
+    }
+
+    .r1,
+    .r2 {
+        margin-right: 40px;
+    }
+
+    .footerLogo {
+        padding: 0;
+        border-right: none;
+    }
+
+
+    .f1 {
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f2 {
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .Copyright-Notice {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
 }
 
 /* TOP鈕 */
@@ -1042,4 +1255,23 @@ footer a:hover {
     max-width: 100%;
     z-index: 999;
     cursor: pointer;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .gotop {
+        top: 85%;
+        left: 87%;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    .gotop {
+        left: 80%;
+    }
 }

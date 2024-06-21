@@ -244,6 +244,22 @@ section {
 .topbar .title {
 margin-right: 50px;
 }
+@media (max-width:1440px) {
+    .topbar .title {
+        margin-right: 95px;
+    }
+
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
 
 /* 首頁大圖*/
 .banner {
@@ -463,6 +479,21 @@ button#closeMenu {
     margin: 4px;
 }
 
+@media (max-width:1440px) {
+    .hamburger {
+        margin-right: 95px;
+    }
+
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
 
 /* 傳統運動介紹 */
 .introduce-text {
@@ -552,6 +583,23 @@ button#closeMenu {
     margin-left: 0;
 }
 
+@media (max-width:1440px) {
+    .Kendo-box {
+        margin-left: 55%;
+
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
+
 
 /* 劍道介紹的框 */
 .Kendo-service {
@@ -626,6 +674,28 @@ button#closeMenu {
 }
 
 /* 大輪播完 */
+@media (max-width:1440px) {
+
+    .Kendo-service .slider2 .card .img img {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .Kendo-service .slider2 .card {
+        width: 600px;
+        height: 400px;
+        margin: 0 15px;
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+
 
 
 /* 劍道行程推薦 */
@@ -908,6 +978,24 @@ button#closeMenu {
     align-items: center;
     /* 垂直居中 */
 }
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .Sumo-box{
+        margin-left: 150px;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+   
+}
+
+
+
 
 /* 大輪播 */
 .Sumo-service .slider2 {
@@ -971,6 +1059,30 @@ button#closeMenu {
 }
 
 /* 大輪播完 */
+@media (max-width:1440px) {
+
+    .Sumo-service .slider2 .card .img img {
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .Sumo-service .slider2 .card {
+        width: 600px;
+        height: 400px;
+        margin: 0 15px;
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
 
 
 /* 相撲行程推薦 */
@@ -1126,7 +1238,32 @@ footer a:hover {
     /* border: 1px solid #ff1c1c; */
 }
 
+
 /*rwd斷點*/
+@media (max-width:1440px) {
+    footer {
+        height: 47vh;
+    }
+
+    .footer {
+
+        width: 80%;
+
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .social-media-icon {
+        margin-top: 50px;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+    }
+}
 
 /*平板*/
 @media (max-width:820px) {
@@ -1135,16 +1272,95 @@ footer a:hover {
 
         height: 100%;
     }
+
+
 }
 
 /*手機板*/
 @media (max-width:640px) {
-    footer {
-        width: 100%;
-
-        height: 100%;
+    .footer {
+        margin-top: 50px;
+        width: 73%;
     }
+
+    .social-media-icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media-icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icon img {
+        height: 25px;
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        /* 垂直居中 */
+        justify-content: center;
+        /* 水平居中 */
+        align-content: center;
+        /* 如果有多行，保证整体居中 */
+    }
+
+    .footer-left .f3 {
+        margin: 10px 120px 20px 0;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .r1::after {
+        left: 130%;
+    }
+
+    .r1,
+    .r2 {
+        margin-right: 40px;
+    }
+
+    .footerLogo {
+        padding: 0;
+        border-right: none;
+    }
+
+
+    .f1 {
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f2 {
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .Copyright-Notice {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
 }
+
 
 /* TOP鈕 */
 .gotop {
@@ -1156,4 +1372,23 @@ footer a:hover {
     max-width: 100%;
     z-index: 999;
     cursor: pointer;
+}
+
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .gotop {
+        top: 85%;
+        left: 87%;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    .gotop {
+        left: 80%;
+    }
 }
