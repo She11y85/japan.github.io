@@ -273,6 +273,61 @@ section {
     letter-spacing: 2px;
 }
 
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .topbar {
+        height: 600px;
+        width: 80%;
+
+        background-position: center;
+
+    }
+
+    .text-box {
+        width: 40%;
+        flex-direction: column;
+    }
+
+    .text {
+        writing-mode: vertical-lr;
+        flex-direction: column;
+        top: 0;
+        right: 20px;
+    }
+
+    .text h1 {
+        writing-mode: vertical-lr;
+        /* 文字垂直排 */
+        letter-spacing: 0.2em;
+        /* 文字加粗 */
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+
+    .text h2 {
+        writing-mode: vertical-lr;
+        /* 文字垂直排 */
+
+        margin-top: 0px;
+        margin-right: 16px;
+    }
+
+    .text h3 {
+
+        writing-mode: vertical-lr;
+        /* 文字垂直排 */
+        margin-top: 0px;
+
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
 /* 漢堡按鈕區 */
 .menu {
     position: fixed;
@@ -503,6 +558,36 @@ button#closeMenu {
 
 }
 
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .focus-box li {
+        margin-left: 70px;
+    }
+
+    .focus-box {
+        margin-left: 40px;
+    }
+
+    .hamburger a {
+
+        margin-right: 420px;
+    }
+
+    .focus-text h3 {
+        margin-right: 0;
+        display: flex;
+
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
 /* 選擇日期 */
 .date {
     width: 100%;
@@ -603,6 +688,33 @@ button#closeMenu {
     color: #9F353A;
     font-weight: bold;
 }
+
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .date-title {
+        display: flex;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+
+    .choose-btn {
+        width: 630px;
+        height: 100px;
+    }
+
+    .choose {
+        margin-left: 7%;
+    }
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
 
 
 /* 報名按鈕 */
@@ -753,6 +865,34 @@ button#closeMenu {
     font-weight: bold;
 }
 
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+    .guide-box {
+        display: flex;
+        margin-right: 300px;
+    }
+
+    .guide-text h2,
+    h3,
+    p {
+        display: flex;
+        margin-right: 100px;
+    }
+
+
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
+
+
 
 /* 行程精選輪播*/
 .feature-box {
@@ -762,6 +902,7 @@ button#closeMenu {
     justify-content: center;
     font-weight: bold;
 }
+
 .feature-box ul {
     display: flex;
     flex-direction: column;
@@ -771,7 +912,7 @@ button#closeMenu {
     margin-left: 100px;
     margin-top: 150px;
     border-right: 0.5px solid #374C66;
-    color: rgba(55, 76, 102,.5);
+    color: rgba(55, 76, 102, .5);
 }
 
 .feature-box li {
@@ -784,17 +925,19 @@ button#closeMenu {
     width: 70px;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
-    cursor: pointer; /* 鼠标悬停时显示手形指针 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手形指针 */
 }
 
 .feature-box .active {
-    border-bottom: 1px solid #374C66; /* 点击时显示底线 */
+    border-bottom: 1px solid #374C66;
+    /* 点击时显示底线 */
     color: var(--indigo);
 }
 
 
 .feature-box li:hover {
-    border-bottom:1px solid var(--indigo);
+    border-bottom: 1px solid var(--indigo);
 }
 
 .feature01 {
@@ -923,7 +1066,7 @@ button#closeMenu {
     height: 200px;
 }
 
-.paragraph{
+.paragraph {
     font-size: 1rem;
     line-height: 40px;
     /* 行距 */
@@ -957,6 +1100,76 @@ button#closeMenu {
 
 /* 形成精選輪播完 */
 
+/*rwd斷點*/
+/*桌機板*/
+@media (max-width:1440px) {
+
+    .feature-box ul {
+        display: flex;
+        /* 使用 flex 布局 */
+        margin-left: 30px;
+    }
+
+    .mySlides {
+        width: 90%;
+    }
+
+    .mySlides2 {
+        width: 80%;
+    }
+
+    .mySlides3 {
+        width: 80%;
+    }
+
+    .f-box {
+        display: flex;
+        margin-left: 0;
+        margin-right: 400px;
+    }
+
+    .f-boxImg {
+        display: flex;
+        margin-left: 0;
+    }
+
+    .slideshow-container2 {
+        display: flex;
+        margin: 0 0;
+        width: 330px;
+        margin-right: 50px;
+    }
+
+    .paragraphs-container {
+        margin-left: 0px;
+
+    }
+
+    .f-boxBtn {
+        display: flex;
+        padding-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .btn-right {
+        display: flex;
+        margin-right: 120px;
+    }
+
+    .btn-lift {
+        display: flex;
+        margin-left: 120px;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
 
 
 /* 花 */
@@ -975,6 +1188,19 @@ button#closeMenu {
     height: 190px;
 }
 
+/*筆電*/
+@media (max-width:1440px) {
+    .DailyTour img {
+        margin-right: 280px;
+        display: flex;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 /* 每日行程 */
 .all-DAY {
@@ -1122,6 +1348,53 @@ a.ui-button:active,
     overflow: hidden;
     margin-top: 100px;
 }
+
+
+
+/*筆電*/
+@media (max-width:1440px) {
+
+    /* 預設標 */
+    #tabs .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+
+        height: 65px;
+        width: 150px;
+        display: flex;
+        left: 250px;
+
+    }
+
+    .all-DAY {
+        width: 35%;
+        left: 1100px;
+    }
+
+    .day_container {
+        left: 400px;
+        height: auto;
+        width: 75%;
+
+        position: relative;
+
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
+
+
+
+
+
+
 
 
 /* 行程內容 */
@@ -1473,6 +1746,75 @@ a.ui-button:active,
     font-weight: bold;
 }
 
+/*筆電*/
+@media (max-width:1440px) {
+    .journey1 {
+        width: 720px;
+        height: 360px;
+
+    }
+
+    .day-text {
+        margin-left: 0;
+        margin-top: 30px;
+
+    }
+
+    .btn-day-lift {
+
+        margin-right: 80px;
+    }
+
+    .btn-day-right {
+        margin-left: 250px;
+    }
+
+    .day-text h4 {
+        position: absolute;
+        z-index: 1;
+        margin-left: 120px;
+    }
+
+    .next-img img {
+        width: 380px;
+        height: 265px;
+
+    }
+
+    .journey-box p {
+        font-size: 1rem;
+        width: 550px;
+        height: 120px;
+        margin-top: 80px;
+
+    }
+
+    .eat-text {
+        height: 240px;
+        width: 750px;
+    }
+    .stop {
+      
+        width: 200px;
+        height: 200px;
+        margin-right: 280px;
+    }
+
+    .eat-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .food {
+        display: flex;
+        margin-left: 150px;
+    }
+}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 
 /* 備註 */
