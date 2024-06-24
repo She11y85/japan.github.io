@@ -1355,10 +1355,11 @@ a.ui-button:active,
         left: 1100px;
     }
 
+    
     .day_container {
-        left: 530px;
+        left: 430px;
         height: auto;
-        width: 90%;
+        width: 100%;
         position: relative;
 
     }
@@ -1750,7 +1751,11 @@ a.ui-button:active,
         height: 280px;
 
     }
+    .day-img {
+        display: flex;       
+        top: 125px;
 
+    }
     .journey-box p {
         font-size: 1rem;
         width: 550px;
@@ -1910,23 +1915,20 @@ a.ui-button:active,
 }
 /*筆電*/
 @media (max-width:1440px) {
+
+    .note {
+        width: 470%;
+       
+    }
     .note-text {
         display: flex;
-        align-items: center;
-        justify-content: center;
         margin-left: 150px;
     }
-
     .note-title {
         display: flex;
-        margin-left: 80px;
-
+        margin-left: 1050px;
+        
     }
-
-    .note-line {
-        right: 200px;
-    }
-
 }
 
 /*平板*/
@@ -1934,17 +1936,17 @@ a.ui-button:active,
 
 /*手機板*/
 @media (max-width:640px) {}
+
 
 
 /* 地圖 */
 iframe {
     margin-top: 100px;
 }
-
 /*筆電*/
 @media (max-width:1440px) {
     iframe {
-        width: 100%;
+        width: 470%;
     }
 }
 
@@ -1953,6 +1955,11 @@ iframe {
 
 /*手機板*/
 @media (max-width:640px) {}
+
+
+
+
+
 /* 頁尾區 */
 footer {
     display: flex;
